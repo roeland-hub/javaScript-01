@@ -1,4 +1,4 @@
-const tvshows = [
+const movies = [
   `legion`,
   `sneaky pete`,
   `santa clarita diet`,
@@ -15,6 +15,8 @@ const tvshows = [
   `timeless`,
   `the oa`,
 ];
+
+const reversed = movies.reverse();
 
 document.write(`<ol>`);
 for (let i = 0; i < movies.length; i++) {

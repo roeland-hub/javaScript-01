@@ -7,7 +7,7 @@ const shows = [
   `a series of unfortunate events`,
   `taboo`,
   `colony`,
-  `24: legacy`,
+  `24 legacy`,
   `speechless`,
   `scherlock`,
   `stranger things`,
