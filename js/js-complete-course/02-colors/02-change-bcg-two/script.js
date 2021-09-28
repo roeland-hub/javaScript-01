@@ -10,7 +10,12 @@
 // You will have time to focus on it later.
 
 (function() {
-
-    // your code here
+    
+    
+    document.getElementById('run').addEventListener('click', function(){
+        let colorValue = document.getElementById('color').value;
+        console.log(colorValue)
+        document.body.style.backgroundColor = colorValue;
+    })
 
 })();

@@ -11,6 +11,12 @@
 
 (function() {
 
-    // your code here
+    let age = prompt('What is your age?');
+    let gender = prompt('What is your gender?');
+    let live = prompt('Were do you live?');
+
+    alert(`your age is ${age} years old`);
+    alert(`your gender is ${gender}`);
+    alert(`you are living in ${live}`);
 
 })();

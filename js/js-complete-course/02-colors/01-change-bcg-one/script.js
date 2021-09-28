@@ -11,6 +11,23 @@
 
 (function() {
 
-    // your code here
+    document.getElementById('red').onclick = changeColorRed;
+    document.getElementById('green').onclick = changeColorGreen;
+    document.getElementById('yellow').onclick = changeColoryellow;
+    document.getElementById('blue').onclick = changeColorBlue;
+
+    function changeColorRed() {
+        document.body.style.background = 'red';
+    }
+    function changeColorGreen() {
+        document.body.style.background = 'green';
+    }
+    function changeColoryellow() {
+        document.body.style.background = 'yellow';
+    }
+    function changeColorBlue() {
+        document.body.style.background = 'blue';
+    }
+
 
 })();

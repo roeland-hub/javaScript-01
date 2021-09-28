@@ -11,6 +11,8 @@
 
 (function() {
 
-    // your code here
+    let message;
+    message = 'hello, world!';
+    alert(message);
 
 })();
