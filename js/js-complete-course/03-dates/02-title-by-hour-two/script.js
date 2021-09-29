@@ -15,4 +15,15 @@
 
     // your code here
 
+    var today = new Date();
+    var time = [today.getHours(), today.getMinutes()].join(".");
+    var greeting;
+
+    if (time < 17.30) {
+     greeting = "Hello";
+    }else {
+    greeting = "Good evening";
+}
+document.getElementById("target").innerHTML = greeting;
+
 })();

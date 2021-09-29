@@ -15,4 +15,15 @@
 
     // your code here
 
+    var today = new Date();
+    const day =['sunday', 'monday', 'tuesday', 'wednesday','thursday', 'fryday', 'sutarday']
+    const month =["January","February","March","April","May","June","July","August","September","October","November","December"]
+    var time = ["today " + day[today.getDay()] + " " + today.getDate() +" " + month[today.getMonth()] + " " + today.getHours() + "h" + today.getMinutes() + "min" + today.getSeconds() + "sec"];
+    //console.log(today);
+
+    document.getElementById("target").innerHTML = time;
+    
+
 })();
+
+

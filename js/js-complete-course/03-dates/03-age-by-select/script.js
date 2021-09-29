@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    const button = document.getElementById('run');
+
+    var userinputDay = document.getElementById("dob-day");
+    var userinputMonth = document.getElementById("dob-month");
+    var userinputYear = document.getElementById("dob-year");
+    
+    const date = new Date();
+    const currentDate = [ date.getDate(), date.getMonth(), date.getFullYear()];
+
+    button.addEventListener( 'click', function(){
+        const birthday = [ parseInt(userinputDay.value), parseInt(userinputMonth.value), parseInt(userinputYear.value)];
+
+        let age = currentDate[2] - birthday[2];
+        let month = currentDate[1] - birthday[1];
+
+        if (month < 0 || (month === 0 && currentDate[0] < birthday[0])) age--;
+
+        alert(`${age} years`)
+    })
+
 
 })();

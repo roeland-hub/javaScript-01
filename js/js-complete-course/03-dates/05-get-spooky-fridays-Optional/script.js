@@ -12,5 +12,7 @@
 (function() {
 
     // your code here
+    const button = document.getElementById('run');
+    var userinput = document.getElementById("year");
 
 })();
