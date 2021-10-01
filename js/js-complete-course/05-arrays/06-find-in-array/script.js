@@ -90,5 +90,14 @@
     ];
 
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+        let jpe = people.find(person => person.firstname === 'Jean' && person.lastname === 'Dupont');
+        let jpi = people.findIndex(person => person.firstname === 'Jean' && person.lastname === 'Dupont');
+
+        console.log(jpe.email)
+        console.log(jpi)
+    })
+    
+  
 
 })();

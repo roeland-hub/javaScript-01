@@ -14,6 +14,15 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        let squareNumber = function(number) {
+            return number > 0 && Math.sqrt(number) % 1 === 0;
+        };
+
+        for (i = 1; i <= 21; i++) {
+            if(squareNumber(i)=== true){
+                console.log(i);
+            }
+        }
 
     });
 

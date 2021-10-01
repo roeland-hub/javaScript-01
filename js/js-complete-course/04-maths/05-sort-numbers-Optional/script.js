@@ -16,6 +16,12 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        var numArray = [2, 4, 14, 10, 90, 23, 16];
+        var newArray = numArray.sort(function(a, b) { return a - b;
+});
+
+console.log(numArray);
+alert(numArray)
 
     });
 

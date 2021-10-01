@@ -90,5 +90,12 @@
     ];
 
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+
+        var ages = people.reduce(function(accumulator, currentValue) {
+            return accumulator + currentValue.age;
+        }, 0);
+        console.log(ages);
+    })
 
 })();

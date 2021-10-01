@@ -27,5 +27,10 @@
     ];
 
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+        let fourth = fruits[3];
+        console.log(fourth);
+    });
+    
 
 })();
