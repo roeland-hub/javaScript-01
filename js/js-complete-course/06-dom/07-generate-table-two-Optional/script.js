@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+    let table = document.createElement("table");
+
+    for (let i=0; i<10; i++){
+        let row = table.insertRow(i);
+        for (let j=0; j<10; j++){
+            let cell = row.insertCell(j);
+            cell.innerHTML = Number(i+1) * Number(j+1); // +1 becouse of index
+        }
+
+    }
+
+    let target = document.getElementById("target");
+    target.appendChild(table);
 
 })();

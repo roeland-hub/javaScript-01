@@ -12,5 +12,11 @@
 (function() {
 
     // your code here
+    //document.getElementsByClassName("target").innerHTML = 'Owend';
+    var newText = document.getElementsByClassName("target");
+
+    for (var i = 0; i < newText.length; i++) {
+    newText[i].innerHTML = "Owend";
+    }
 
 })();

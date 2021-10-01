@@ -12,5 +12,14 @@
 (function() {
 
     // your code here
+    var table = document.createElement("table");
 
+    for (var i = 0; i < 10; i++) {
+        var row = table.insertRow(i);
+        for (var j = 0; j < 1; j++){
+            row.insertCell(j);
+        }
+    }
+        var target = document.getElementById("target");
+        target.appendChild(table)
 })();

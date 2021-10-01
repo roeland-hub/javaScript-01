@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+    let picture = document.getElementsByTagName("span")[0].getAttribute("data-image");
+    let newPlace = document.getElementById("target");
+    let img = document.createElement("img");
+    img.src = picture;
+    newPlace.appendChild(img);
+    let oldplace = document.getElementById("source");
+    oldplace.remove();
+
+
 
 })();
+
+
+//var elem = document.getElementById("id_of_the_element");
+//var attribute_value = elem.getAttribute("data-attribute_name");
