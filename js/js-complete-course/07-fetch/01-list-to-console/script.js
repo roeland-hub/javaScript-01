@@ -11,4 +11,9 @@
 
 (() => {
     // your code here
+    document.getElementById("run").addEventListener("click", function(){
+        fetch('http://127.0.0.1:5500/_shared/api.json')
+        .then(response => response.json())
+        .then(json => console.log(json))
+    })
 })();
