@@ -11,12 +11,26 @@
 
 (function() {
     
-    // to get the value of an input: document.getElementById("element-id").value
-
-    document.getElementById("run").addEventListener("click", function() {
+    // to get the value of an input: document.getElementById("element-id").valu
 
         // your code here
+       document.getElementById("run").addEventListener("click", function(){
+            var input = document.getElementById("number").value;
+            let n = input;
+            answer = factorial(n)
 
-    });
-
+            function factorial(n){
+                let answer = 1;
+                if (n == 0 || n == 1){
+                  return answer;
+                }else{
+                  for(var i = n; i >= 1; i--){
+                    answer = answer * i;
+                  }
+                  return answer;
+                }  
+              }
+              console.log("Factorial off " + n + " is " + answer);
+       })
+    
 })();

@@ -29,4 +29,15 @@
     ];
 
     // your code here
+    document.getElementById('run').addEventListener('click', function(){
+        let myArrayWithNoDuplicates = fruits.reduce(function (previousValue, currentValue) {
+            if (previousValue.indexOf(currentValue) === -1) {
+              previousValue.push(currentValue)
+            }
+            return previousValue
+          }, [])
+          
+          console.log(myArrayWithNoDuplicates)
+    })
+    
 })();

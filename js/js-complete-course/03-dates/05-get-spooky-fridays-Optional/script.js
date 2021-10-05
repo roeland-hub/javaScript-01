@@ -12,7 +12,21 @@
 (function() {
 
     // your code here
-    const button = document.getElementById('run');
-    var userinput = document.getElementById("year");
+    
+    document.getElementById("run").addEventListener("click", function(){
+        var input = document.getElementById("year").value;
+        var year = Number(input);
+        for (var month = 0; month < 13; month++) {
+            var d = new Date(year,month,13);
+            if(d.getDay() == 5) {
+                var months = ["January","February","March","April","May","June","July",
+                "August","September","October","November","December"]
+
+                console.log(months[month]);
+            }
+           
+        }
+    })
+    
 
 })();
