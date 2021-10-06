@@ -17,11 +17,21 @@
         var rpssw = document.getElementById("pass-two");
 
         if(pssw.value !== rpssw.value) {
-            var element = document.
-            document.getElementById("pass-one").innerHTML = "red";
+            document.getElementById("pass-one").style.borderColor = "red";
             document.getElementById("pass-two").style.borderColor = "red";
-        }
+            var errorOne = document.getElementById("pass-one");
+            errorOne.classList.add("error");
+            errorOne.value = "error";
+            console.log(errorOne);
+            var errorTwo = document.getElementById("pass-two");
+            errorTwo.classList.add("error");
+            errorTwo.value = "more error";
+            console.log(errorTwo);
+            
+          }
+        
     })
 
 
 })();
+
