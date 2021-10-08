@@ -12,5 +12,19 @@
 (function() {
 
     // your code here
+    let i = 0;
+    let target = document.getElementById("target");
+    let text = target.innerHTML;
+    target.innerHTML = ' ';
+    let speed = 50;
+
+    typeWriter();
+    function typeWriter() {
+        if (i < text.length) {
+            target.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+    }
 
 })();

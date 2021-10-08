@@ -12,5 +12,37 @@
 (function() {
 
     // your code here
+    let target = document.getElementById('target');
+    let btnOne = document.getElementById('part-one');
+    let btnTwo = document.getElementById('part-two');
+    let btnThree = document.getElementById('part-three');
+    let btnFour = document.getElementById('part-four');
+    let buttons = [btnOne, btnTwo, btnThree, btnFour];
+    
+
+    buttons.forEach(button => {
+        button.addEventListener('click', function(){
+            let min = button.getAttribute('data-min')
+            let max = button.getAttribute('data-max')
+            let result = parseInt (button.innerHTML) +1;
+
+            if( result > max) {
+                result = min
+            }
+
+            if(result < 10) {
+                button.innerHTML =  '0' + result;
+            }
+            
+            else {
+                button.innerHTML = result.toString()
+            }
+
+            target.innerHTML = '0' + btnOne.innerText + btnTwo.innerText + btnThree.innerText + btnFour.innerText;
+
+        })
+    });
+    
+    
 
 })();
